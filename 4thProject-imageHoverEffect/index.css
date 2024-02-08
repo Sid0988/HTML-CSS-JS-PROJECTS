@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #555;
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 50rem;
+    height: 30rem;
+    background-color: #222;
+    position: relative;
+}
+
+.clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    /* background-color: #ccc; */
+}
+
+
+.clip1 {
+    background: url(https://images.unsplash.com/photo-1604537466158-719b1972feb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 37% 0, 22% 100%, 0 100%);
+}
+
+.clip2 {
+    background: url(https://img.freepik.com/premium-photo/boat-beautiful-lake-nature-image-concept_995887-729.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(78% 0, 37% 0, 22% 100%, 56% 100%);
+}
+
+.clip3 {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/1/1a/24701-nature-natural-beauty.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(78% 0, 100% 0, 100% 100%, 56% 100%);
+}
+
+.container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
