@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(194, 80, 80);
+    font-size: 62.5%;
+}
+
+.text{
+    width: 40rem;
+    height: 5rem;
+    padding: 1rem 2rem 2rem 2rem;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    background-color: white;
+
+    & h2{
+        font-size: 1.2rem;
+        color: rebeccapurple;
+    }
+
+    & p{
+        font-size: 1rem;
+    }
+
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: .7rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#051937, #A8EB12);
+    border-radius: 100px;
+}
+
