@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: crimson;
+    height: 100vh;
+    font-size: 62.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#accordian{
+    width: 25rem;
+    margin: 20px;
+}
+
+#accordian li{
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: white;
+    list-style: none;
+    padding: .5rem 1rem;
+}
+
+#accordian li label{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    font-size: medium;
+    color: dodgerblue;
+    padding: .2rem 0;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#accordian .content{
+    line-height: 15px;
+    width: 100%;
+    max-height: 0;
+    /* margin-top: .5rem; */
+    overflow: hidden;
+    transition: all .2s ease;
+
+}
+
+#accordian li label + input[type="radio"]:checked + .content{
+    max-height: 30rem;
+}
