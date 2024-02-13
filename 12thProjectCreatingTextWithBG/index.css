@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.background{
+    font-weight: 900;
+    font-size: 10rem;
+    background: linear-gradient(#D16BA5, #86A8E7, #5FFBF1);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
