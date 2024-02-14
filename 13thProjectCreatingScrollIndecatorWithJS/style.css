@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+section{
+    padding: 1rem;
+    border: 2px solid white;
+    margin: 1rem 0;
+}
+
+h1{
+    padding: .5rem 0;
+}
+
+.scroll-indicator{
+    height: 5px;
+    width: calc(100% - 6em);
+    position: fixed;
+    top: 10px;
+    left: 3em;
+    /* border: 1px solid red; */
+}
+
+.scroll-indicator .progress{
+    height: 100%;
+    width: 10%;
+    background-image: linear-gradient(to right top, 
+    #42ac50, #00a38a, #0093d3, #007aff, #1242eb);
+    border-radius: 10px;
+    transition: width 0.1s;
+}
