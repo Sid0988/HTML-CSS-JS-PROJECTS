@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 700;
+    transition: all 0.5s;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+button:active{
+    padding: .5rem;
+}
+
+h2{
+    color: white;
+}
