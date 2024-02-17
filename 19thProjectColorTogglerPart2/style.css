@@ -1,0 +1,50 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#check{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label{
+    display: block;
+    width: 80px;
+    height: 35px;
+    background-color: black;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    border-radius: 50%;
+    transition: all 0.5s;
+
+}
+
+#check:checked + label::before{
+    background-color: black;
+    left: calc(100% - 2.5px);
+    transform: translateX(-100%);
+}
+
+#check:checked + label{  /* In this program we have learned to select next sibling we need to use + operator*/
+    background-color: white;
+}
+
+label:active::before{
+    width: 40px;
+}
+
+/* In this program we have learned to select next sibling we need to use + operator*/

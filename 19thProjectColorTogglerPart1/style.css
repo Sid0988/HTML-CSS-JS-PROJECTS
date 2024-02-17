@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: all 0.5s;
+}
+
+
+
+.toggler-container{
+    width: 65px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50px;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    width: 27px;
+    height: 27px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.5s;
+    /* padding: 10px; */
+}
+
+/*For js purpose*/
+
+body.back{
+    background-color: black;
+}
+.toggler-container.bg{
+    background-color: white;
+}
+.circle.move-right{
+    transform: translate(-100%, -50%);
+    background-color: black;
+}
+
+
+
+
+
