@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form PopUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-container">
+    <h1>Welcome to the real world</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eaque neque illo, quas in, unde sed est culpa perferendis consectetur libero officiis sequi veniam ipsa molestiae commodi, dolorum assumenda impedit.</p>
+    <button class="btn1" id="btn1">Sign up</button>
+</div>
+
+<section class="modal-container" id="modal">
+    <section class="modal">
+        <button id="btn2" class="btn">X</button>
+        <form action="" class="modal-form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Email">
+            </div>
+            <div>
+                <label for="Password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div>
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" placeholder="Confirm Password">
+            </div>
+            <div>
+                <input type="submit" value="submit" class="submit">
+            </div>
+        </form>
+    </section>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

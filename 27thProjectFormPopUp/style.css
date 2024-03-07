@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 70px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+p{
+    max-width: 700px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+button{
+    padding: .5rem 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.modal-container{
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.modal-container .modal{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn{
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.modal-container .modal .modal-form div{
+    padding: 20px;
+    color: black;
+}
+
+.modal-container .modal .modal-form label{
+    display: block;
+    padding-bottom: 5px;
+}
+.modal-container .modal .modal-form input{
+    width: 100%;
+    padding: 5px;
+}
+
+.modal-container .modal .modal-form .submit{
+    width: 100px;
+    height: 30px;
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+/*For Javascript*/
+
+.modal-container.show-modal{
+    display: block;
+}
