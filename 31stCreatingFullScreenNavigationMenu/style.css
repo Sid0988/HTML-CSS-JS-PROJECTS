@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.image-container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    height: 18rem;
+    width: 18rem;
+    margin: 2rem;
+    border: 2px solid rebeccapurple;
+}
+.img-one{
+    background-image: url(./images/6536956.jpg);  
+    background-size: cover;
+    background-position: center;  
+}
+
+.img-two{
+    background-image: url(./images/atharva-tulsi-6ftd4RgUdnk-unsplash.jpg);  
+    background-size: cover;
+    background-position: center;  
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 60rem; */
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+p{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    clip-path: circle(20px at calc(100vw - 5vw) 31px);
+    background-color: blueviolet;
+    transition: all 0.5s;
+}
+
+.menu li{
+    position: relative;
+    z-index: 5;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 700;
+    /* display: inline-block; */
+    width: 120px;
+    padding: .4rem;
+    /* background-color: black; */
+    /* overflow: hidden; */
+}
+
+.menu .dots{
+    position: absolute;
+    top: 20px;
+    left: calc(100vw - 5vw);
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.dots > span{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.highlight{
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform 0.1s;
+}
